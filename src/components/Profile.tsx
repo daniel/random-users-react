@@ -19,7 +19,7 @@ export default function Profile({ profile }: Props) {
         alt=""
       />
       <div className="profile__name">
-        {profile.name.first} {profile.name.first}
+        {profile.name.first} {profile.name.last}
       </div>
       <div>{dateOfBirth}</div>
       <a href="mailto:{profile.email}">{profile.email}</a>
