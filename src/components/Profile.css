@@ -1,10 +1,13 @@
 .profile {
-  border: 1px solid #ccc;
   padding: 1rem;
 }
 
+.profile__image {
+  border-radius: 100%;
+}
+
 .profile__name {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }

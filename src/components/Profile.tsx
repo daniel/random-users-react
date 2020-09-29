@@ -9,11 +9,17 @@ type Props = {
 export default function Profile({ profile }: Props) {
   return (
     <div className="profile">
-      <img src={profile.picture.large} alt="" />
+      <img
+        className="profile__image"
+        src={profile.picture.large}
+        width="128"
+        height="128"
+        alt=""
+      />
       <div className="profile__name">
-        {profile.name.title} {profile.name.first} {profile.name.first}
+        {profile.name.first} {profile.name.first}
       </div>
-      <div>{profile.email}</div>
+      <a href="mailto:{profile.email}">{profile.email}</a>
       <div>{profile.phone}</div>
     </div>
   )
