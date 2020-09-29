@@ -7,6 +7,8 @@ type Props = {
 }
 
 export default function Profile({ profile }: Props) {
+  const dateOfBirth = new Date(profile.dob.date).toLocaleDateString('sv-SE')
+
   return (
     <div className="profile">
       <img
@@ -19,6 +21,7 @@ export default function Profile({ profile }: Props) {
       <div className="profile__name">
         {profile.name.first} {profile.name.first}
       </div>
+      <div>{dateOfBirth}</div>
       <a href="mailto:{profile.email}">{profile.email}</a>
       <div>{profile.phone}</div>
     </div>
