@@ -1,0 +1,10 @@
+.profile {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.profile__name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
