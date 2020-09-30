@@ -2,9 +2,15 @@ html {
   box-sizing: border-box;
   line-height: 1.4;
   padding: 1rem;
+  color: #222;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+*:focus {
+  outline: 0 !important;
 }
 
 a {

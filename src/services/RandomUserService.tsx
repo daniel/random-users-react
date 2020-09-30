@@ -15,6 +15,7 @@ export type RandomUserProfile = {
     medium: string
     thumbnail: string
   }
+  gender: 'male' | 'female'
 }
 
 export type RandomUserResponse = {
