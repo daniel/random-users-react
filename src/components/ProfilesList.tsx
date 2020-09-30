@@ -9,13 +9,13 @@ export default function ProfilesList() {
   const [profiles, setProfiles] = useState<RandomUserProfile[]>([])
   const [page, setPage] = useState<number>(1)
 
-  async function getData() {
-    setProfiles(await RandomUserService.get(page))
-  }
-
   useEffect(() => {
-    getData()
+    getFirstPage()
   }, [])
+
+  async function getFirstPage() {
+    setProfiles(await RandomUserService.get(1))
+  }
 
   const loadMore = async () => {
     const moreProfiles = await RandomUserService.get(page + 1)
