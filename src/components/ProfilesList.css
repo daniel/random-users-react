@@ -2,15 +2,4 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 1rem;
-
-}
-
-.profiles-list__load-more {
-  color: green;
-  border: 1px solid green;
-  padding: 1rem;
-  display: inline-block; 
-  border-radius: 1rem;
-  cursor: pointer;
-  margin-top: 1rem;
 }

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import RandomUserService, {
   RandomUserProfile,
 } from '../services/RandomUserService'
+import Button from './Button'
 import GenderFilter from './GenderFilter'
 import Profile from './Profile'
 import './ProfilesList.css'
@@ -43,9 +44,7 @@ export default function ProfilesList() {
         ))}
       </div>
       {profiles.length > 0 && (
-        <div className="profiles-list__load-more" onClick={loadMore}>
-          Get More
-        </div>
+        <Button title="Get More" onClick={loadMore} active />
       )}
     </div>
   )
