@@ -26,7 +26,7 @@ export type RandomUserResponse = {
   }
 }
 
-const PAGE_SIZE = 10
+const PAGE_SIZE = 50
 const BASE_URL = 'https://randomuser.me/api/'
 
 export default class RandomUserService {
